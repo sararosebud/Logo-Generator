@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" 
-        width="200" height="300">
-        <g transform="translate(10,50)">
-        <rect width="200" height="200" fill="yellow"></rect>
-        <text x="100" y="100" alignment-baseline="middle" font-size="55" fill="black" text-anchor="middle">MMM</text>
-      </g>    
-        </svg>
+        width="300" height="200">
+          <g>
+          <polygon points="150, 18 244, 182 56, 182" fill="black">
+          </polygon>
+          <text x="150" y="125" text-anchor="middle" font-size="56" fill="white" dy=".3em">OOO</text>
+          </g>
+          </svg>
