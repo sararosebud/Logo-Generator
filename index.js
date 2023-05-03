@@ -64,8 +64,7 @@ function init() {
         logoShape.setColor(answers.backgroundColor)
         logoShape.setText(answers.letters, answers.textColor)
        
-        console.log(logoShape)
-        console.log(logoShape.render())
+       
         
        return fs.writeFile('./examples/logo.svg', logoShape.render(), (error)=>{
         if(error) {
@@ -78,6 +77,6 @@ function init() {
 
 }
 
-// use fs to write to file-svg into examples folder
+
 
 init();
