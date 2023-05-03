@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 const path = require('path');
-const shapes = require('./lib/shapes')
+const {Circle, Triangle, Square} = require('./lib/shapes')
 
 
 
@@ -50,13 +50,32 @@ const shapes = require('./lib/shapes')
 function init() {
     inquirer.prompt(logoQuestions)
     .then((answers) => {
-        console.log(answers); 
-    })
+        console.log(answers);
+        let logoShape;
+        if(answers.shapeOfLogo === 'Circle') {
+            logoShape = new Circle();
 
-    // finish this function with renderlogo funciton from shapes.js
-    .then((answers) => {
+        } else if(answers.shapeOfLogo === 'Triangle') {
+            logoShape = new Triangle();
+
+        } else if(answers.shapeOfLogo === 'Square') {
+            logoShape = new Square();
+        }
+        logoShape.setColor(answers.backgroundColor)
+        logoShape.setText(answers.letters, answers.textColor)
+       
+        console.log(logoShape)
+        console.log(logoShape.render())
+        
+       return fs.writeFile('./examples/logo.svg', logoShape.render(), (error)=>{
+        if(error) {
+            console.error(error)
+        }
+
+       })
         
     })
+
 }
 
 // use fs to write to file-svg into examples folder
