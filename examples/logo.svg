@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 500 500">
+          <g>
+        <rect x="40" y="10" width="400" height="400" fill="white"></rect>
+        <text x="50%" y="50%" text-anchor="middle" font-size="200" fill="black">MMM</text>
+          </g>     
+        </svg>
