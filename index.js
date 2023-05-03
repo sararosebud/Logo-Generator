@@ -3,7 +3,8 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 const path = require('path');
-const {Circle, Triangle, Square} = require('./lib/shapes')
+const {Circle, Triangle, Square} = require('./lib/shapes');
+const { col } = require('sequelize');
 
 
 
@@ -69,6 +70,7 @@ function init() {
        return fs.writeFile('./examples/logo.svg', logoShape.render(), (error)=>{
         if(error) {
             console.error(error)
+            console.log("Generated logo.svg")
         }
 
        })
