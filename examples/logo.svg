@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" 
-        width="300" height="200">
+        width="200" height="300">
           <g>
-          <polygon points="150, 18 244, 182 56, 182" fill="black">
-          </polygon>
-          <text x="150" y="125" text-anchor="middle" font-size="56" fill="white" dy=".3em">OOO</text>
+            <circle cx="100" cy="100" r="90" fill ="orange">
+            </circle>
+            <text x="50%" y="35%" text-anchor="middle" font-size="60" fill="lemon" dy=".3em">srw</text>
           </g>
-          </svg>
+        </svg>

@@ -64,12 +64,17 @@ function init() {
         }
         logoShape.setColor(answers.backgroundColor)
         logoShape.setText(answers.letters, answers.textColor)
+
+
        
        
         
        return fs.writeFile('./examples/logo.svg', logoShape.render(), (error)=>{
         if(error) {
             console.error(error)
+           
+        }
+        else {
             console.log("Generated logo.svg")
         }
 
