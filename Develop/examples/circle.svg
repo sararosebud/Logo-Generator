@@ -3,6 +3,6 @@
           <g>
             <circle cx="100" cy="100" r="90" fill ="orange">
             </circle>
-            <text x="50%" y="35%" text-anchor="middle" font-size="60" fill="lemon" dy=".3em">srw</text>
+            <text x="50%" y="35%" text-anchor="middle" font-size="60" fill="lavender" dy=".3em">SRW</text>
           </g>
         </svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+        width="300" height="200">
+          <g>
+          <polygon points="150, 18 244, 182 56, 182" fill="Pink">
+          </polygon>
+          <text x="150" y="125" text-anchor="middle" font-size="56" fill="Turquoise" dy=".3em">SRW</text>
+          </g>
+          </svg>
