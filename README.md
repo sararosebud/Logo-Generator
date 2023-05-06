@@ -20,7 +20,7 @@ Node.js command-line application that takes in user input to generate a logo and
 
 ## Installation
 <a name="installation"></a>
-Clone this repository and run node index.js in bash terminal. 
+Clone [this repository](https://github.com/sararosebud/Logo-Generator) and run node index.js in bash terminal. 
 
 ## Usage
 <a name="usage"></a>

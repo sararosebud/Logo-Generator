@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shapes Circle should render correctly 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" 
+        width="200" height="300">
+          <g>
+            <circle cx="100" cy="100" r="90" fill ="#ff0000">
+            </circle>
+            <text x="50%" y="35%" text-anchor="middle" font-size="60" fill="#ffffff" dy=".3em">ABC</text>
+          </g>
+        </svg>"
+`;
+
+exports[`Shapes Square should render correctly 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" 
+        width="300" height="200">
+        <g transform="translate(50,10)">
+        <rect width="200" height="200" fill="#0000ff"></rect>
+        <text x="100" y="100" alignment-baseline="middle" font-size="55" fill="#ffffff" text-anchor="middle">123</text>
+      </g>    
+        </svg>"
+`;
+
+exports[`Shapes Triangle should render correctly 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" 
+        width="300" height="200">
+          <g>
+          <polygon points="150, 18 244, 182 56, 182" fill="#00ff00">
+          </polygon>
+          <text x="150" y="125" text-anchor="middle" font-size="56" fill="#000000" dy=".3em">XYZ</text>
+          </g>
+          </svg>"
+`;

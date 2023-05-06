@@ -1,16 +1,33 @@
-const { Shape } = require('./shapes');
+const { Circle, Triangle, Square } = require('./shapes');
 
-describe('Shape', () => {
-  test('setColor sets the color of the shape', () => {
-    const shape = new Shape();
-    shape.setColor('red');
-    expect(shape.color).toBe('red');
+describe('Shapes', () => {
+  describe('Circle', () => {
+    it('should render correctly', () => {
+      const circle = new Circle();
+      circle.setColor('#ff0000');
+      circle.setText('ABC', '#ffffff');
+      const svg = circle.render();
+      expect(svg).toMatchSnapshot();
+    });
   });
 
-  test('setText sets the text and text color of the shape', () => {
-    const shape = new Shape();
-    shape.setText('ABC', 'blue');
-    expect(shape.text).toBe('ABC');
-    expect(shape.textColor).toBe('blue');
+  describe('Triangle', () => {
+    it('should render correctly', () => {
+      const triangle = new Triangle();
+      triangle.setColor('#00ff00');
+      triangle.setText('XYZ', '#000000');
+      const svg = triangle.render();
+      expect(svg).toMatchSnapshot();
+    });
+  });
+
+  describe('Square', () => {
+    it('should render correctly', () => {
+      const square = new Square();
+      square.setColor('#0000ff');
+      square.setText('123', '#ffffff');
+      const svg = square.render();
+      expect(svg).toMatchSnapshot();
+    });
   });
 });
